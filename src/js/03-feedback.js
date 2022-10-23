@@ -16,6 +16,8 @@ const messageRef = document.querySelector('.feedback-form textarea')
 
 const STORAGE_KEY = 'feedback-form-state';
 
+console.log(formData)
+
 populateData()
 
 formRef.addEventListener('submit', e => {
@@ -48,7 +50,9 @@ function populateData() {
   const data = getData(STORAGE_KEY);
   if (data) {
     emailRef.value = data.email;
+    formData.email = data.email
     messageRef.value = data.message;
+    formData.message = data.message
   }
 }
 
