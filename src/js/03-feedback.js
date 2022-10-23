@@ -16,7 +16,7 @@ const messageRef = document.querySelector('.feedback-form textarea')
 
 const STORAGE_KEY = 'feedback-form-state';
 
-console.log(formData)
+// console.log(formData)
 
 populateData()
 
